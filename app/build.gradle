@@ -27,12 +27,6 @@ dependencies {
     compile 'com.github.championswimmer:Android-SocialButtons:1.0'
     compile 'com.github.scottyab:showhidepasswordedittext:0.8'
     compile 'com.alirezaafkar:toolbar:1.1.0'
-    repositories {
-        mavenCentral()
-        maven {
-            url  'http://dl.bintray.com/gigamole/maven/'
-        }
-    }
     compile 'com.github.devlight.navigationtabbar:navigationtabbar:+'
 
 }
@@ -45,6 +39,10 @@ repositories {
     jcenter()
     maven { url "https://jitpack.io" }
 
+    mavenCentral()
+    maven {
+        url  'http://dl.bintray.com/gigamole/maven/'
+    }
 
 }
 
