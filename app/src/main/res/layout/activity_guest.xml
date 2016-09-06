@@ -11,7 +11,7 @@
     tools:context="com.example.taeba.pet01.GuestActivity">
 
 
-    <com.gigamole.navigationtabbar.ntb.NavigationTabBar
+    <!--<com.gigamole.navigationtabbar.ntb.NavigationTabBar
 
         android:id="@+id/ntb"
         android:layout_width="match_parent"
@@ -37,5 +37,5 @@
         app:ntb_icon_size_fraction="0.5"
         app:ntb_badge_size="10sp"
         app:ntb_title_size="10sp" />
-
+!-->
 </RelativeLayout>

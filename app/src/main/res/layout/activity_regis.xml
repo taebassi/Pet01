@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.taeba.pet01.RegisActivity">
+    tools:context="com.example.taeba.pethome.RegisActivity">
 
 
     <LinearLayout
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText2"
+                android:id="@+id/editTextFullName"
                 android:layout_gravity="center_horizontal"
                 android:hint="Full Name"
                 android:layout_marginBottom="20dp" />
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText3"
+                android:id="@+id/editTextUsername"
                 android:layout_gravity="center_horizontal"
                 android:hint="Username"
                 android:layout_marginBottom="20dp" />
@@ -60,14 +60,14 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/editText4"
+                android:id="@+id/editTextEmail"
                 android:layout_gravity="center_horizontal"
                 android:hint="E-mail"
                 android:layout_marginBottom="20dp" />
             <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/pass"
+                android:id="@+id/editTextPassword"
                 android:hint="Password"
                 android:layout_gravity="center_horizontal" />
 
@@ -80,8 +80,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:id="@+id/button2"
+        android:text="Register"
+        android:id="@+id/btRegister"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp" />
