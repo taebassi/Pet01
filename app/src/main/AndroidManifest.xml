@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GuestActivity"></activity>
+        <activity android:name=".RegisActivity"></activity>
     </application>
 
 </manifest>
