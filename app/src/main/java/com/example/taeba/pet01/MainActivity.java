@@ -21,5 +21,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView tvRegister = (TextView) findViewById(R.id.tvRegister);
+        tvRegister.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,RegisActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
