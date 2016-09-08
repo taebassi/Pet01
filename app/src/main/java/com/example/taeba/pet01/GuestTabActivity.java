@@ -58,22 +58,23 @@ public class GuestTabActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "kuy all isas!!", Snackbar.LENGTH_LONG)
+                        .setAction("Undo", null).show();
+
             }
         });*/
 
     }
 
 
-   /* @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_guest_tab, menu);
         return true;
     }
 
-   /@Override
+   @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -110,15 +111,18 @@ public class GuestTabActivity extends AppCompatActivity {
             switch (position){
                 case 0 :
                     return DogFragment.newInstance("","");
-                default:
+                case 1 :
                     return CatFragment.newInstance("","");
+                case 2 :
+                    return SearchFragment.newInstance("","");
             }
+            return null;
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 2;
+            return 3;
         }
 
         @Override
@@ -128,6 +132,9 @@ public class GuestTabActivity extends AppCompatActivity {
                     return "Dog";
                 case 1:
                     return "Cat";
+                case 2:
+                    return "Search";
+
 
             }
             return null;

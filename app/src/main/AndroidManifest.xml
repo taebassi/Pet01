@@ -9,25 +9,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-        </activity>
-        <activity android:name=".GuestActivity" />
-        <activity android:name=".RegisActivity" />
-        <activity android:name=".RegisterResaultActivity" />
-        <activity
-            android:name=".GuestTabActivity"
-            android:label="@string/title_activity_guest_tab"
-            android:theme="@style/AppTheme.NoActionBar">
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
+        <activity android:name=".GuestActivity">
+        </activity>
+        <activity android:name=".RegisActivity" />
+        <activity android:name=".RegisterResaultActivity" />
+        <activity
+            android:name=".GuestTabActivity"
+            android:label="@string/title_activity_guest_tab"
+            android:theme="@style/AppTheme.NoActionBar"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".Test1Activity"></activity>
     </application>
 
 </manifest>
