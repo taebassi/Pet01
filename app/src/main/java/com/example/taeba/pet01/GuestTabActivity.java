@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.SearchView;
 import android.widget.TextView;
 
 public class GuestTabActivity extends AppCompatActivity {
@@ -30,10 +31,6 @@ public class GuestTabActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
-
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
     private ViewPager mViewPager;
 
     @Override
@@ -43,11 +40,11 @@ public class GuestTabActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
+
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
-        // Set up the ViewPager with the sections adapter.
+
+
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
@@ -71,6 +68,12 @@ public class GuestTabActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_guest_tab, menu);
+        MenuItem menuSearch=menu.findItem(R.id.action_serach);
+        final SearchView searchView = (SearchView) menuSearch.getActionView();
+        if (searchView!=null){
+            searchView.setQueryHint("");
+            searchView.setSubmitButtonEnabled(true);
+        }
         return true;
     }
 
@@ -106,8 +109,7 @@ public class GuestTabActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
+
             switch (position){
                 case 0 :
                     return DogFragment.newInstance("","");
@@ -121,7 +123,7 @@ public class GuestTabActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+
             return 3;
         }
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pet01</string>
+    <string name="app_name">PETHOME</string>
     <string name="title_activity_guest_tab">PETHOME</string>
     <string name="action_settings">Settings</string>
     <string name="action_profile">Profile</string>
