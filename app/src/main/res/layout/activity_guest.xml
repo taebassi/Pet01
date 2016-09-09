@@ -13,8 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tabHost"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1">
+        android:layout_gravity="center_vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,13 +23,16 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"></TabWidget>
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"></TabWidget>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
 
                 <include layout="@layout/cat" />
 
@@ -40,4 +42,5 @@
 
         </LinearLayout>
     </TabHost>
+
 </LinearLayout>

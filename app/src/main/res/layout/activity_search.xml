@@ -9,4 +9,115 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.taeba.pet01.SearchActivity">
 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:id="@+id/textView7"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_marginLeft="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:id="@+id/g1">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cat"
+                    android:id="@+id/radioButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dog"
+                    android:id="@+id/radioButton2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_marginLeft="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:id="@+id/g2">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/radioButton3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/radioButton4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp" />
+
+    </LinearLayout>
+
 </RelativeLayout>
