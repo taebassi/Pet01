@@ -115,16 +115,61 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
-            // Handle the camera action
+            MenuItem item1 = (MenuItem)findViewById(R.id.nav_profile);
+            item1.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Intent intent = new Intent(HomeActivity.this,ProfileActivity.class);
+                    startActivity(intent);
+                    return false;
+                }
+            });
         } else if (id == R.id.nav_favorite) {
+            MenuItem item1 = (MenuItem)findViewById(R.id.nav_profile);
+            item1.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Intent intent = new Intent(HomeActivity.this,FavoriteActivity.class);
+                    startActivity(intent);
+                    return false;
+                }
+            });
 
         } else if (id == R.id.nav_mypost) {
+            MenuItem item1 = (MenuItem)findViewById(R.id.nav_profile);
+            item1.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Intent intent = new Intent(HomeActivity.this,MypostActivity.class);
+                    startActivity(intent);
+                    return false;
+                }
+            });
 
         } else if (id == R.id.nav_message) {
 
+
         } else if (id == R.id.nav_setting) {
+            MenuItem item1 = (MenuItem)findViewById(R.id.nav_profile);
+            item1.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Intent intent = new Intent(HomeActivity.this,SettingsActivity.class);
+                    startActivity(intent);
+                    return false;
+                }
+            });
 
         } else if (id == R.id.nav_about) {
+            MenuItem item1 = (MenuItem)findViewById(R.id.nav_profile);
+            item1.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Intent intent = new Intent(HomeActivity.this,AboutActivity.class);
+                    startActivity(intent);
+                    return false;
+                }
+            });
 
         }
 

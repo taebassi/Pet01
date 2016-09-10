@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".GuestActivity"></activity>
+        <activity android:name=".GuestActivity" />
         <activity android:name=".RegisActivity" />
         <activity android:name=".RegisterResaultActivity" />
         <activity android:name=".Test1Activity" />
@@ -18,13 +18,20 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MypostActivity" />
+        <activity android:name=".FavoriteActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>
