@@ -16,7 +16,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/cat" />
+        android:src="@drawable/ic_visibility_grey_900_24dp"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        android:minHeight="20dp"
+        android:minWidth="20dp" />
 
     <TextView
         android:layout_width="match_parent"

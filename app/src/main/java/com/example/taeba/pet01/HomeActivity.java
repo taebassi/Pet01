@@ -14,12 +14,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TabHost;
 import android.widget.Toast;
 
 import static android.widget.Toast.LENGTH_SHORT;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private TabHost myTabHost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,23 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        myTabHost = (TabHost)findViewById(R.id.tabHost);
+        myTabHost.setup();
+
+        TabHost.TabSpec tabspec;
+
+        tabspec = myTabHost.newTabSpec("Cat");
+        tabspec.setIndicator("Cat",getResources().getDrawable(R.drawable.cat));
+        tabspec.setContent(R.id.linearlayout2);
+        myTabHost.addTab(tabspec);
+
+        tabspec = myTabHost.newTabSpec("Dog");
+        tabspec.setIndicator("Dog",getResources().getDrawable(R.drawable.dog));
+        tabspec.setContent(R.id.linearLayout3);
+        myTabHost.addTab(tabspec);
+
+        myTabHost.setCurrentTab(0);
     }
 
     @Override
@@ -95,17 +114,17 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_profile) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_favorite) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_mypost) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_message) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_setting) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_about) {
 
         }
 
@@ -113,4 +132,5 @@ public class HomeActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
